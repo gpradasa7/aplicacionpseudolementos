@@ -1,0 +1,49 @@
+#palabra::before {
+  color: #c62828;
+  content: "PSEUDO-ELEMENTO ::BEFORE ";
+  margin: 50px;
+}
+#palabra::after {
+  color: #2e7d32;
+  content: "CONTENT BEFORE AFTER LOREM *";
+  margin-top: 30px;
+  display: block;
+}
+
+#texto::after {
+  color: #2e7d32;
+  content: ": esto no lo he escrito en el parrafo";
+  display: block;
+  margin-top: 75px;
+}
+
+#revoloteado:hover {
+  color: #6a1b9a;
+}
+
+body {
+  background-color: aqua;
+  justify-items: center;
+  margin: 0;
+}
+
+#revoloteado:hover {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+#palabra {
+  display: block;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+}
+
+#texto {
+  display: inline-block;
+}
